@@ -1,86 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Falcon Learning Website</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unorthodox Ways to Improve English Listening Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="falcon.png" alt="Falcon Logo" class="logo-img">
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#objective">Objective</a></li>
-        <li><a href="#activities">Activities</a></li>
-        <li><a href="#reflection">Reflection</a></li>
-        <li><a href="#conclusion">Conclusion</a></li>
-      </ul>
-      <button id="theme-toggle">🌙</button>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-title">English Listening Mastery</h1>
+                <div class="nav-buttons">
+                    <button class="nav-btn active" data-section="home">Home</button>
+                    <button class="nav-btn" data-section="activities">Activities</button>
+                    <button class="nav-btn" data-section="objectives">Objectives</button>
+                    <button class="nav-btn" data-section="conclusion">Conclusion</button>
+                    <button class="nav-btn" data-section="developer">Developer</button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <section id="home" class="section">
-    <h1>Welcome to Falcon Learning</h1>
-    <p>Explore new and creative ways to sharpen your skills while enjoying the process.</p>
-  </section>
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <div class="hero-container">
+                <h1 class="hero-title">Unorthodox Ways to Improve English Listening Skills</h1>
+                <p class="hero-subtitle">Transform your English learning journey with innovative methods that engage your mind, body, and memory</p>
+                <div class="hero-features">
+                    <div class="feature-card">
+                        <h3>🎯 Self-Diagnosis Method</h3>
+                        <p>Discover your listening gaps through targeted audio exercises</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🎭 Interactive Roleplay</h3>
+                        <p>Practice real-world conversations in engaging scenarios</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🔧 Linguistic Tools</h3>
+                        <p>Master sound discrimination and prosody patterns</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🏃‍♂️ Kinesthetic Learning</h3>
+                        <p>Connect physical movement with language acquisition</p>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="showSection('objectives')">Start Your Journey</button>
+            </div>
+        </section>
 
-  <section id="objective" class="section alt">
-    <h2>Objective</h2>
-    <p>Discover unorthodox techniques that boost listening, memory, and speaking while keeping things engaging and interactive.</p>
-  </section>
+        <!-- Objectives Section -->
+        <section id="objectives" class="content-section">
+            <div class="objectives-container">
+                <h2 class="section-
 
-  <section id="activities" class="section">
-    <h2>Activities</h2>
-
-    <div class="card">
-      <div class="card-header">Activity 1: Self-Diagnosis</div>
-      <div class="card-content">
-        <p>Try to focus without support first. Write down what you catch, then compare with the original text. Finally, read aloud your corrections.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">Activity 2: Roleplay Practice</div>
-      <div class="card-content">
-        <p>Create short dialogues (like ordering coffee or asking directions). Act them out with a partner or practice by yourself aloud.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">Activity 3: Linguistic Tools</div>
-      <div class="card-content">
-        <p>Experiment with minimal pairs to sharpen your ear. Practice stress and intonation to see how meaning shifts.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card-header">Activity 4: Kinesthetic Encoding</div>
-      <div class="card-content">
-        <p>Pair a physical movement with each new word. Move + Speak = Stronger memory link.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="reflection" class="section alt">
-    <h2>Reflection</h2>
-    <p>Think about which methods worked best for you. Which ones will you keep practicing?</p>
-  </section>
-
-  <section id="conclusion" class="section">
-    <h2>Conclusion</h2>
-    <p>Stay curious, keep practicing, and don’t be afraid to try creative strategies to grow your skills.</p>
-  </section>
-
-  <footer>
-    <p>Developed by Sofiane Lamraoui</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
